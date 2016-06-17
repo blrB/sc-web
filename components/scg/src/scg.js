@@ -696,6 +696,24 @@ SCg.Editor.prototype = {
         callback(self.collectIdtfs(keyword));
     },
 
+    leaveSelectAndZoomTool: function(tool) {
+        var tools = [
+            this.toolSwitch(),
+            this.toolEdge(),
+            this.toolContour(),
+            this.toolBus(),
+            this.toolLink(),
+            this.toolUndo(),
+            this.toolRedo(),
+            this.toolDelete(),
+            this.toolOpen(),
+            this.toolSave(),
+            this.toolIntegrate()];
+        for (var button = 0 ; button < tools.length ; button++){
+            this.hideTool(tools[button]);
+        }
+    },
+
     // -------------------------------- Helpers ------------------
     /**
      * Change specified tool state to disabled

@@ -2,6 +2,7 @@
 	"sources": [
         "src/gwf-file-creater.js",
         "src/gwf-file-loader.js",
+        "src/gwf-text-loader.js",
         "src/gwf-model-objects.js",
         "src/gwf-object-info-reader.js",
         "src/scg-object-builder.js",
