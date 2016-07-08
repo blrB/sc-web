@@ -1,4 +1,6 @@
 .SCgSvg {
+  height: 100%;
+  width: calc(100% - 45px);
   background-color: #fff;
   cursor: default;
   -webkit-user-select: none;
@@ -250,10 +252,6 @@ path.SCgBusPath {
 }
 
 /* ------------- User interface -------------- */
-.scg-tools-panel {
-    position: absolute;
-}
-
 .scg-tools-panel img {
     width: 32px;
 }

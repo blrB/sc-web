@@ -78,6 +78,7 @@ SCg.Editor.prototype = {
         var container = '#' + this.containerId;
         $(container).prepend('<div id="tools-' + this.containerId + '"></div>');
         var tools_container = '#tools-' + this.containerId;
+        $(tools_container).css({ 'float' : 'left'});
         $(tools_container).load('static/components/html/scg-tools-panel.html', function() {
              $.ajax({
                     url: "static/components/html/scg-types-panel-nodes.html", 
