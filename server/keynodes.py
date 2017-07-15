@@ -53,6 +53,9 @@ class KeynodeSysIdentifiers:
     nrel_email = 'nrel_email'
     nrel_authorised_user = 'nrel_authorised_user'
     nrel_registered_user = 'nrel_registered_user'
+    nrel_administrator = 'nrel_administrator'
+    nrel_manager = 'nrel_manager'
+    nrel_expert = 'nrel_expert'
 
     rrel_key_sc_element = 'rrel_key_sc_element'
     sc_definition = 'sc_definition'

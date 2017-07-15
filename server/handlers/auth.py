@@ -184,14 +184,3 @@ class LogOut(base.BaseHandler):
 
                 if results and results[0] and results[0][1]:
                     sctp_client.erase_element(results[0][1])
-
-
-
-
-
-class AuthUser(base.BaseHandler):
-
-    # @tornado.web.asynchronous
-    def get(self):
-        # self.clear_cookie(self.cookie_user_key)
-        self.redirect('/')
