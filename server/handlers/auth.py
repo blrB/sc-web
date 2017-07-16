@@ -152,7 +152,7 @@ class GoogleOAuth2LoginHandler(base.BaseHandler,
 @decorators.class_logging
 class LogOut(base.BaseHandler):
     
-    # @tornado.web.asynchronous
+    @tornado.web.asynchronous
     def get(self):
         self.logout_user_from_kb()
         self.clear_cookie(self.cookie_user_key)
